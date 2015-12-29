@@ -1,0 +1,21 @@
+import chai = require("chai");
+import {%_MODEL_NAME_%Controller} from "../../../src/modules/%_MODULE_NAME_%/%_FILE_NAME_%-controller";
+/**
+ * Globals
+ */
+var expect = chai.expect;
+
+/**
+ * Unit tests
+ */
+describe('%_MODEL_NAME_%Controller Unit Tests:', () => {
+
+  describe('%_MODEL_NAME_%Controller routes', () => {
+    it('should be an array', (done) => {
+      let controller = new %_MODEL_NAME_%Controller();
+
+      expect(controller.routes).to.be.a('array');
+      done();
+    });
+  });
+});

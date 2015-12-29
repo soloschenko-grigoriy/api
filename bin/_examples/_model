@@ -1,0 +1,21 @@
+import {Model} from "../../model";
+
+export class %_MODEL_NAME_%Model extends Model{
+
+  /**
+   * Mongoose model name
+   */
+  public name: string = '%_MODEL_NAME_%';
+
+  /**
+   * List of fields to be skipped from sanitizing
+   *
+   * @type {Object}
+   */
+  public skipSanitize: Object  = {};
+
+  /**
+   * Mongoose schema
+   */
+  public schema: Object = {};
+}

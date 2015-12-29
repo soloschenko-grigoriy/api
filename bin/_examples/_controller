@@ -1,0 +1,16 @@
+import {Controller} from "../../controller";
+import {%_MODEL_NAME_%Model} from './%_FILE_NAME_%-model';
+
+export class %_MODEL_NAME_%Controller extends Controller{
+
+  /**
+   * Model ref
+   */
+  public model: %_MODEL_NAME_%Model = new %_MODEL_NAME_%Model();
+
+  /**
+   * Available routes
+   */
+  public routes: string[] = ['load','list','create','update', 'delete'];
+
+}

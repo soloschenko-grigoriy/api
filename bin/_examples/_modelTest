@@ -1,0 +1,21 @@
+import chai = require("chai");
+import {%_MODEL_NAME_%Model} from "../../../src/modules/%_MODULE_NAME_%/%_FILE_NAME_%-model";
+/**
+ * Globals
+ */
+var expect = chai.expect;
+
+/**
+ * Unit tests
+ */
+describe('%_MODEL_NAME_%Model Unit Tests:', () => {
+
+  describe('%_MODEL_NAME_%Model name', () => {
+    it('should be a string', (done) => {
+      let model = new %_MODEL_NAME_%Model();
+
+      expect(model.name).to.be.a('string');
+      done();
+    });
+  });
+});

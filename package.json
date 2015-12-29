@@ -1,0 +1,37 @@
+{
+  "name": "api",
+  "description": "Quick and simple REST API for general purposes",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3",
+    "body-parser": "^1.14.1",
+    "method-override": "^2.3.5",
+    "mongodb": ">= 1.4.29",
+    "mongoose": "latest",
+    "mongoose-sanitizer":"latest",
+    "mongoose-deep-populate":"latest",
+    "multer":"latest",
+    "underscore":"latest"
+  },
+  "devDependencies":{
+    "mocha":"2.3.4",
+    "chai":"2.1.0"
+  },
+  "scripts":{
+    "start" : "nodemon app.js",
+    "add"   : "node bin/generate.js",
+    "test"  : "mocha --recursive"
+  },
+  "engines": {
+    "node": "0.12.4"
+  },
+  "author": {
+    "name":  "Soloschenko Grigoriy",
+    "email": "soloschenko@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soloschenko-grigoriy/api"
+  }
+}
